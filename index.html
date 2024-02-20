@@ -1,19 +1,13 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <title>出川哲朗</title>
-  </head>
-  <body>
-    <h2>おいしい出川の作り方</h2>
-    <h2>おいしい出川の作り方</h2>
-    <h1>おいしい出川の作り方</h1>
-   <h1>おいしい出川の作り方</h1>
-    <h1>おいしい出川の作り方</h1>
-    <h2>おいしい出川の作り方</h2>
-    <p>はじめての伝次郎先生を作りました</p>
-    <p>はじめての伝次郎先生を作りました</p>
-    <p>はじめての伝次郎先生を作りました</p>
-    <p>はじめての伝次郎先生を作りました</p>
-  </body>
-</html>
+
+<!DOCTYPE html> 
+<html lang="ja"> 
+  <head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>掲示板</title> 
+    <style> body { font-family: Arial, sans-serif; margin: 0; padding: 20px; } #messages { border: 1px solid #ccc; padding: 10px; margin-bottom: 20px; max-height: 300px; overflow-y: scroll; } #message-input { margin-bottom: 10px; } </style> 
+  </head> 
+  <body> 
+    <h1>掲示板</h1> <div id="messages"></div>
+    <input type="text" id="message-input" placeholder="メッセージを入力してください"> <button onclick="sendMessage()">送信</button>
+    <script> function sendMessage() { var messageInput = document.getElementById('message-input'); var message = messageInput.value; var messagesDiv = document.getElementById('messages'); if (message.trim() !== '') { var messageNode = document.createElement('p'); messageNode.textContent = message; messagesDiv.appendChild(messageNode); messageInput.value = ''; } } </script> </body> </html>
